@@ -1,0 +1,2 @@
+collections/** linguist-detectable
+docs/*.md linguist-detectable linguist-documentation=false
