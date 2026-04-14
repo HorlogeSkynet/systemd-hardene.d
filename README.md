@@ -22,7 +22,7 @@ For instance, hardening Gitea systemd service is easy as :
 
 ```bash
 ## 1. Clone this project
-git clone -C /usr/local/share https://github.com/HorlogeSkynet/systemd-hardene.d
+git clone https://github.com/HorlogeSkynet/systemd-hardene.d /usr/local/share/systemd-hardene.d
 
 ## 2. Prepare Gitea systemd service unit override directory tree
 mkdir -p /usr/local/lib/systemd/system
