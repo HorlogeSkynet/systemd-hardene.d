@@ -1,0 +1,21 @@
+---
+name: Linting
+
+permissions:
+  contents: read
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    name: Run systemd-analyze on service overrides
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - run: |
+          find collection/ \
+          -mindepth 2 -maxdepth 2 -type f \
+          -print \
+          -exec /bin/sh -c \
+            '( cat {} ; echo "ExecStart=/bin/true" ) > /tmp/unit.service && systemd-analyze verify /tmp/unit.service' \;
