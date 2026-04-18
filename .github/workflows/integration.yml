@@ -16,6 +16,6 @@ jobs:
       - run: |
           find collection/ \
             -mindepth 2 -maxdepth 2 -type f \
-            -print
+            -print \
               | xargs -i /bin/sh -c \
                 'echo {}; ( cat {} ; echo "ExecStart=/bin/true" ) > /tmp/unit.service && systemd-analyze verify /tmp/unit.service'
