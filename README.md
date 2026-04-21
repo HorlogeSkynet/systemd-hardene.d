@@ -37,7 +37,7 @@ systemctl restart gitea.service
 
 ### I don't like your security profile and/or I've got a specific use-case which isn't covered, what should I do ?
 
-> Sure, this project cannot fit _everyone_ needs. Service unit overrides are shipped as `00-hardened.conf`, and one could easily extend it by creating another unit override which would be lexicographically-loaded afterwards (e.g. `/etc/systemd/system/fixme.service.d/01-relaxed.conf`). Simply run `systemctl edit fixme.service` and add your own override this way.
+> Sure, this project cannot fit _everyone_'s needs. Service unit overrides are shipped as `00-hardened.conf`, and one could easily extend it by creating another unit override which would be lexicographically-loaded afterwards (e.g. `/etc/systemd/system/fixme.service.d/01-relaxed.conf`). Simply run `systemctl edit fixme.service` and add your own override this way.
 
 ### Do you support systemd user instances ?
 
