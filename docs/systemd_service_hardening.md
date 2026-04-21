@@ -11,6 +11,7 @@ NoNewPrivileges=yes
 PrivateBPF=yes
 PrivateDevices=yes
 PrivateIPC=yes
+PrivateMounts=yes
 PrivateTmp=yes
 
 ProtectClock=yes
