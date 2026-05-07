@@ -99,7 +99,7 @@ But there's so much more you can do. Here are some security-related options exce
 
 #### Clock
 
-* [`ProtectClock`](https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ProtectClock=) : If set, writes to the hardware clock or system clock will be denied. It is recommended to turn this on for most services that do not need modify the clock. Enabling this option removes `CAP_SYS_TIME` and `CAP_WAKE_ALARM` from the capability bounding set for this unit, installs a system call filter to block calls that can set the clock, and `DeviceAllow=char-rtc r` is implied. This ensures */dev/rtc\** are made read-only to the service. If this setting is on, but the unit doesn't have the `CAP_SYS_ADMIN` capability, `NoNewPrivileges=yes` is implied.
+* [`ProtectClock`](https://www.freedesktop.org/software/systemd/man/systemd.exec.html#ProtectClock=) : If set, writes to the hardware clock or system clock will be denied. It is recommended to turn this on for most services that do not need to modify the clock. Enabling this option removes `CAP_SYS_TIME` and `CAP_WAKE_ALARM` from the capability bounding set for this unit, installs a system call filter to block calls that can set the clock, and `DeviceAllow=char-rtc r` is implied. This ensures */dev/rtc\** are made read-only to the service. If this setting is on, but the unit doesn't have the `CAP_SYS_ADMIN` capability, `NoNewPrivileges=yes` is implied.
 
 #### IPC
 
