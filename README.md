@@ -52,6 +52,7 @@ systemctl restart gitea.service
 * [@ageis](https://github.com/ageis)'s original [systemd_service_hardening.md](https://gist.github.com/ageis/f5595e59b1cddb1513d1b425a323db04)
 * [@krathalan](https://github.com/krathalan)'s [systemd-sandboxing](https://github.com/krathalan/systemd-sandboxing)
 * [Keep Your Sandbox Tight!](https://github.com/rusty-snake/kyst/tree/main/systemd)
+* [@lucaswerkmeister](https://github.com/lucaswerkmeister)'s [/etc files collection](https://github.com/lucaswerkmeister/server-etc/tree/main/systemd/system)
 
 ## Related Projects
 
