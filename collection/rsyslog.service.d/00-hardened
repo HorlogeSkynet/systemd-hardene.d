@@ -6,6 +6,7 @@ MemoryDenyWriteExecute=yes
 NoNewPrivileges=yes
 
 PrivateBPF=yes
+PrivateDevices=no
 DevicePolicy=closed
 DeviceAllow=/dev/kmsg
 DeviceAllow=/dev/log
