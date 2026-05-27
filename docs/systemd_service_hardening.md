@@ -32,6 +32,8 @@ RestrictSUIDSGID=yes
 
 LockPersonality=yes
 SystemCallArchitectures=native
+SystemCallFilter=@system-service
+SystemCallFilter=~memfd_create
 ```
 
 But there's so much more you can do. Here are some security-related options excerpting and linking to their corresponding documentation from systemd's manual pages :
